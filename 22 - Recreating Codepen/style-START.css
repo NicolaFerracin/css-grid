@@ -1,7 +1,6 @@
 html {
   box-sizing: border-box;
-  font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma,
-    Sans-Serif;
+  font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;
   font-weight: normal;
   color: #272727;
   text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
@@ -28,3 +27,81 @@ h6 {
   font-size: 1.5em;
 }
 
+.codepen {
+  display: grid;
+  grid-template-rows: auto 1fr 1fr auto;
+  height: 100vh;
+}
+
+.pen {
+  display: grid;
+  grid-template-columns: 1fr auto auto auto auto auto;
+  align-items: center;
+  background: black;
+  color: white;
+  grid-gap: 10px;
+  padding: 10px;
+  border-bottom: 3px solid #343434;
+}
+
+.code {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background: #1b2b34;
+  padding: 5px;
+}
+
+.editor__header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  padding: 2px;
+  grid-gap: 5px;
+  color: white;
+  background: rgb(0, 0, 0, 0.2);
+}
+.editor__code {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  color: white;
+  height: 100%;
+}
+.editor__gutter {
+  display: grid;
+  align-self: start;
+}
+.editor__input {
+  resize: none;
+  background: none;
+  border: 0;
+  color: grey;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.settings {
+  padding: 10px;
+  background: black;
+  border-top: 1px solid #343434;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}
+.button {
+  background: #343434;
+  border-radius: 5px;
+  border: 0;
+  color: white;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.button--small {
+  font-size: 11px;
+  padding: 5px;
+}
+
+.button--dirty {
+  border-top: 3px solid yellow;
+}
